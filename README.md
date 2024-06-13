@@ -15,7 +15,7 @@ If a proxy in the proxylist fails to load, the script will stop itself and relau
 	1) pip install Selenium
 	2) pip install beautifulsoup4 for the proxyScraper.py 
 	
-You will need to place/replace the latest Chrome Driver (chromedriver.exe) in to the project directory. https://sites.google.com/a/chromium.org/chromedriver/downloads
+You will need to place/replace the latest Chrome Driver (chromedriver.exe) in to the project directory. https://googlechromelabs.github.io/chrome-for-testing/#stable
 
 **Build Proxy List**
 1) Gather a working proxy list and name the file proxylist.txt. (With each proxy address on a separate line)
