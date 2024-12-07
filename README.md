@@ -19,7 +19,7 @@ You will need to place/replace the latest Chrome Driver (chromedriver.exe) in to
 **Build Proxy List**
 1) Gather a working proxy list and name the file proxylist.txt. (With each proxy address on a separate line)
 2) Sage will by default use the proxylist.txt file
-3) You can download a list of http or https proxies from here: https://github.com/TheSpeedX/PROXY-List
+3) You can download a list of http or https proxies from here: [https://github.com/TheSpeedX/PROXY-List](https://github.com/TheSpeedX/PROXY-List/blob/master/http.txt)
 
 **Modify Script**
 1) Create a domain/url list in urls.txt
