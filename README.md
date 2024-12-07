@@ -20,7 +20,7 @@ You will need to place/replace the latest Chrome Driver (chromedriver.exe) in to
 **Build Proxy List**
 1) Gather a working proxy list and name the file proxylist.txt. (With each proxy address on a separate line)
 2) Sage will by default use the proxylist.txt file
-3) In the Sage folder there is a script called proxyScraper.py, proxyScraper.py will gather a list of freely available proxies.
+3) You can download a list of http or https proxies from here: https://github.com/TheSpeedX/PROXY-List
 
 **Modify Script**
 1) Create a domain/url list in urls.txt
@@ -34,7 +34,6 @@ You will need to place/replace the latest Chrome Driver (chromedriver.exe) in to
 2) After exiting the script 'runScript.py' you will need to do additional cleanup by killing any of the remaining Chrome processes still present.
 3) Let it continue as it loops through your domain list using your Chrome browser, the script will pause between 90 and 120 seconds on each page it navigates to. When it finishes the loop the script will close and respawn with a new IP address.
 4) **Timestopper.crx** is an addon that prevents alert() windows from appearing. In the early years of development sometimes a free proxy would force an alert() and block the script until it was closed. Timestopper.crx might not continue to work after Manifest v2 in chrome is completely gone, est year 2024.
-5) The first connection in the script is directed to a domain of mine, and is just a blank page with a title, I do this to test the connection of each proxy. The address is here you can check it out if you like: https://www.techshinobi.com/browser/test-page.html
-6) Since proxyGrabber.py wasn't written by me I did not include it within this Github page. 
+5) The first connection in the script is directed to a domain of mine, and is just a blank page with a title, I do this to test the connection of each proxy. The address is here you can check it out if you like: https://www.techshinobi.com/browser/test-page.html 
 
 
