@@ -17,7 +17,7 @@ If a proxy in the proxylist fails to load, the script will stop itself and relau
 You will need to place/replace the latest Chrome Driver (chromedriver.exe) in to the project directory. https://googlechromelabs.github.io/chrome-for-testing/#stable
 
 **Build Proxy List**
-1) Gather a working proxy list and name the file proxylist.txt. (With each proxy address on a separate line and using <ip>:<port> format)
+1) Gather a working proxy list and name the file proxylist.txt. (With each proxy address on a separate line and using ip:port format)
 2) Sage will by default use the proxylist.txt file
 3) You can download a list of http or https proxies from here: [https://github.com/TheSpeedX/PROXY-List](https://github.com/TheSpeedX/PROXY-List/blob/master/http.txt)
 
