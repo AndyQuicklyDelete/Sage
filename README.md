@@ -30,7 +30,7 @@ You will need to place/replace the latest Chrome Driver (chromedriver.exe) in to
 
 **Notes**
 1) You will not see results if browsing to a single page on a website. This has to do with how bounce rate is calculated from average session duration in Google Analytics.
-2) After exiting the script 'runScript.py' you will need to do additional cleanup by killing any of the remaining Chrome processes still present.
+2) After exiting the script 'runChrome.py' you will need to do additional cleanup by killing any of the remaining Chrome processes still present.
 3) Let it continue as it loops through your domain list using your Chrome browser, the script will pause between 90 and 120 seconds on each page it navigates to. When it finishes the loop the script will close and respawn with a new IP address.
 4) **Timestopper.crx** is an addon that prevents alert() windows from appearing. In the early years of development sometimes a free proxy would force an alert() and block the script until it was closed. Timestopper.crx might not continue to work after Manifest v2 in chrome is completely gone, est year 2024.
 5) The first connection in the script is directed to a domain of mine, and is just a blank page with a title, I do this to test the connection of each proxy. The address is here you can check it out if you like: https://www.techshinobi.com/browser/test-page.html 
