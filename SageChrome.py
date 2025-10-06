@@ -32,6 +32,9 @@ def readystate_complete(d):
 
 
 def sage():
+    
+    user_agent = 'Mozilla/5.0 CK={} (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
+    
     ### INITIATE BROWSER UNDER PROXY CONFIG
 
     myProxy = str(random.choice(proxyList))
@@ -39,27 +42,16 @@ def sage():
     
     # chrome_options = webdriver.ChromeOptions()
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--headless=new")
     chrome_options.add_argument('--disable-gpu')
     chrome_options.add_argument('disable-infobars')
-    # chrome_options.add_argument("--proxy-server=%s" % myProxy)
-
-    user_agent = 'Mozilla/5.0 CK={} (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko'
-
-    webdriver.DesiredCapabilities.CHROME['proxy'] = {
-        "httpProxy": myProxy,
-        "ftpProxy": myProxy,
-        "sslProxy": myProxy,
-        "proxyType": "MANUAL",
-    }
-
-    webdriver.DesiredCapabilities.CHROME['acceptSslCerts']=True
-    chrome_options.add_argument("user-agent="+user_agent)
-
+    chrome_options.add_argument("--proxy-server=%s" % myProxy)
+    chrome_options.add_argument("user-agent=%s" % user_agent)
     chrome_options.add_argument('--log-level=3')
     chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    #chrome_options.add_extension(os.getcwd() + '\Timestopper.crx')
 
+    webdriver.DesiredCapabilities.CHROME['acceptSslCerts']=True
+    
     s = Service('chromedriver.exe')
     browser = webdriver.Chrome(service=s, options=chrome_options)
     browser.set_page_load_timeout(120)
